@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Classical European Ciphers · The Red Cipher Archive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      background: #050000;
+      color: #b30000;
+      font-family: "Courier New", monospace;
+      line-height: 1.8;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 60px auto;
+      padding: 50px;
+      background: #080000;
+      border: 1px solid #400000;
+      box-shadow: 0 0 90px rgba(255,0,0,0.06);
+    }
+
+    nav {
+      text-align: center;
+      font-size: 13px;
+      margin-bottom: 40px;
+    }
+
+    nav a {
+      color: #ff3333;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    nav a:hover { text-decoration: underline; }
+
+    h1 {
+      text-align: center;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.7;
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      border-bottom: 1px solid #400000;
+      padding-bottom: 6px;
+      margin-top: 70px;
+      margin-bottom: 25px;
+    }
+
+    h3 {
+      margin-top: 35px;
+      font-size: 16px;
+    }
+
+    p { margin-bottom: 18px; }
+
+    .cipher-text {
+      background: #020000;
+      border: 1px dashed #550000;
+      padding: 18px;
+      margin: 20px 0;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .note {
+      background: #0d0000;
+      border-left: 3px solid #660000;
+      padding: 18px;
+      font-size: 13px;
+      margin: 30px 0;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      opacity: 0.5;
+      border-top: 1px solid #400000;
+      padding-top: 25px;
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+<nav>
+  <a href="index.html">INDEX</a>
+  <a href="ancient.html">ANCIENT</a>
+  <a href="modern.html">MODERN</a>
+  <a href="constructed.html">CONSTRUCTED</a>
+  <a href="logs.html">LOGS</a>
+</nav>
+
+<h1>CLASSICAL EUROPEAN CIPHERS</h1>
+<div class="subtitle">Mechanized secrecy, repetition, and the limits of cleverness</div>
+
+<p>
+Classical European ciphers are often presented as stepping stones toward modern
+cryptography — primitive, flawed, and ultimately obsolete. This framing is
+technically correct and intellectually misleading.
+</p>
+
+<p>
+What distinguishes these systems is not their weakness, but their confidence.
+They assume an adversary with limited time, limited tools, and limited patience.
+In many historical contexts, this assumption held.
+</p>
+
+<div class="note">
+Early assumption (2009): Mastering these systems would provide a foundation for
+all others. This has proven incomplete.
+</div>
+
+<h2>Caesar and Shift Variants</h2>
+
+<p>
+The Caesar cipher is frequently reduced to a single shift of three. In practice,
+shift ciphers appear with arbitrary rotations, mixed alphabets, and occasionally
+null characters designed to mislead casual analysis.
+</p>
+
+<p>
+My standard method is mechanical: enumerate all shifts, score results against
+expected language frequency, then read the highest-ranking candidates manually.
+This works almost every time.
+</p>
+
+<div class="cipher-text">KHOOR ZRUOG</div>
+
+<div class="note">
+Later frustration (2016): The ease of breaking shift ciphers has made them
+uninteresting. Their persistence is cultural, not cryptographic.
+</div>
+
+<h2>Affine Ciphers</h2>
+
+<p>
+Affine ciphers introduce arithmetic into substitution, mapping letters via
+linear functions. They feel more sophisticated, but their structure remains
+rigid. Once the key space is enumerated, resistance collapses.
+</p>
+
+<p>
+Breaking affine ciphers requires little intuition. Two known plaintext-letter
+pairs are sufficient. The rest is algebra.
+</p>
+
+<div class="note">
+Observation: Systems that yield to formula rarely survive human curiosity.
+</div>
+
+<h2>Transposition Systems</h2>
+
+<p>
+Rail fences, columnar transpositions, and their variants do not disguise
+frequencies — they rearrange them. This distinction matters. Frequency analysis
+remains possible, but indirect.
+</p>
+
+<p>
+My approach relies on identifying probable word fragments (cribs) and testing
+positions. Success depends less on mathematics and more on language instinct.
+</p>
+
+<div class="cipher-text">TEES TETN HIRP APT</div>
+
+<div class="note">
+Personal note: Transposition work is exhausting. It feels closer to puzzle
+solving than analysis.
+</div>
+
+<h2>Vigenère and Polyalphabetic Systems</h2>
+
+<p>
+Vigenère represents a psychological turning point. It acknowledges that
+repetition is dangerous and attempts to disguise it. For a time, this worked.
+</p>
+
+<p>
+The weakness is not mathematical. It is human. Keys are reused. Keys are short.
+Keys are meaningful. Kasiski examination and index of coincidence exploit this
+predictability relentlessly.
+</p>
+
+<div class="cipher-text">LXFOPVEFRNHR</div>
+
+<div class="note">
+Revision (2018): Vigenère fails not because it is weak, but because people are.
+</div>
+
+<h2>On Method</h2>
+
+<p>
+Classical cryptanalysis rewards patience and familiarity with language. It does
+not reward creativity. Once the tools are learned, outcomes become predictable.
+This predictability is unsettling.
+</p>
+
+<p>
+I find myself returning to these systems less frequently. Not because they lack
+value, but because they lack surprise.
+</p>
+
+<div class="note">
+Uncomfortable conclusion: If a cipher can be mastered completely, it no longer
+holds my attention.
+</div>
+
+<footer>
+  Page annotated over multiple revisions · Confidence decreasing
+</footer>
+
+</div>
+</body>
+</html>
